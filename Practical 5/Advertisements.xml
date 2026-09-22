@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements xmlns="http://schemas.microsoft.com/AspNet/AdRotator-Schedule-File">
+    <Ad>
+        <ImageUrl>https://via.placeholder.com/600x180/1f4e79/ffffff?text=Advertisement+1</ImageUrl>
+        <NavigateUrl>https://www.microsoft.com/</NavigateUrl>
+        <AlternateText>Advertisement 1 - Microsoft</AlternateText>
+        <Impressions>25</Impressions>
+        <Keyword>Technology</Keyword>
+    </Ad>
+    <Ad>
+        <ImageUrl>https://via.placeholder.com/600x180/2e7d32/ffffff?text=Advertisement+2</ImageUrl>
+        <NavigateUrl>https://visualstudio.microsoft.com/</NavigateUrl>
+        <AlternateText>Advertisement 2 - Visual Studio</AlternateText>
+        <Impressions>25</Impressions>
+        <Keyword>Development</Keyword>
+    </Ad>
+    <Ad>
+        <ImageUrl>https://via.placeholder.com/600x180/8e44ad/ffffff?text=Advertisement+3</ImageUrl>
+        <NavigateUrl>https://dotnet.microsoft.com/</NavigateUrl>
+        <AlternateText>Advertisement 3 - .NET</AlternateText>
+        <Impressions>25</Impressions>
+        <Keyword>DotNet</Keyword>
+    </Ad>
+    <Ad>
+        <ImageUrl>https://via.placeholder.com/600x180/d35400/ffffff?text=Advertisement+4</ImageUrl>
+        <NavigateUrl>https://learn.microsoft.com/</NavigateUrl>
+        <AlternateText>Advertisement 4 - Microsoft Learn</AlternateText>
+        <Impressions>25</Impressions>
+        <Keyword>Learning</Keyword>
+    </Ad>
+</Advertisements>
