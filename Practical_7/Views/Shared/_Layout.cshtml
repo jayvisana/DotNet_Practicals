@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title - Campus Feedback</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background: #f4f7fb;
+            color: #243247;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        .navbar {
+            background: #172b4d !important;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            letter-spacing: .2px;
+        }
+
+        main.container {
+            max-width: 1120px;
+        }
+
+        .hero-panel {
+            background: linear-gradient(135deg, #e8f1ff, #f7fbff);
+            border: 1px solid #dce8f8;
+            border-radius: 18px;
+        }
+
+        .feedback-card {
+            border: 1px solid #e6ebf2;
+            border-radius: 16px;
+            transition: transform .15s ease, box-shadow .15s ease;
+        }
+
+        .feedback-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 .75rem 1.5rem rgba(23, 43, 77, .09) !important;
+        }
+
+        .form-panel {
+            background: #fff;
+            border-radius: 16px;
+            border: 1px solid #e6ebf2;
+        }
+
+        .form-control, .form-select {
+            border-color: #d7deea;
+            padding-top: .65rem;
+            padding-bottom: .65rem;
+        }
+
+        .form-control:focus, .form-select:focus {
+            border-color: #86b7fe;
+            box-shadow: 0 0 0 .2rem rgba(13, 110, 253, .12);
+        }
+
+        .page-kicker {
+            color: #0d6efd;
+            font-size: .78rem;
+            font-weight: 700;
+            letter-spacing: 1.3px;
+            text-transform: uppercase;
+        }
+
+        footer {
+            background: #172b4d;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    @Html.Partial("_Header")
+
+    <main class="container flex-grow-1 py-4 py-md-5">
+        @RenderBody()
+    </main>
+
+    @Html.Partial("_Footer")
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
