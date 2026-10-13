@@ -1,0 +1,40 @@
+@{
+    ViewBag.Title = "Home";
+}
+
+<section class="hero-panel text-center px-3 px-md-5 py-5 mb-4 mb-md-5">
+    <div class="page-kicker mb-2">Your voice matters</div>
+    <h1 class="display-5 fw-bold mb-3">Campus Feedback Portal</h1>
+    <p class="lead text-secondary mx-auto mb-0" style="max-width: 680px;">
+        Share your experience and help us make learning and teaching better for everyone.
+    </p>
+</section>
+
+<div class="row g-4 justify-content-center">
+    <div class="col-md-6">
+        <div class="card feedback-card shadow-sm h-100">
+            <div class="card-body p-4 p-lg-5 text-center d-flex flex-column">
+                <div class="display-5 mb-3" aria-hidden="true">&#127891;</div>
+                <h2 class="h4 card-title fw-bold">Student Feedback</h2>
+                <p class="card-text text-secondary flex-grow-1">
+                    Tell us about your course, learning experience, and what could be improved.
+                </p>
+                @Html.ActionLink("Give Student Feedback", "StudentFeedback", "Feedback", null, new { @class = "btn btn-primary px-4" })
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card feedback-card shadow-sm h-100">
+            <div class="card-body p-4 p-lg-5 text-center d-flex flex-column">
+                <div class="display-5 mb-3" aria-hidden="true">&#128105;&#8205;&#127979;</div>
+                <h2 class="h4 card-title fw-bold">Teacher Feedback</h2>
+                <p class="card-text text-secondary flex-grow-1">
+                    Share your thoughts about teaching, your department, and the academic environment.
+                </p>
+                @Html.ActionLink("Give Teacher Feedback", "TeacherFeedback", "Feedback", null, new { @class = "btn btn-success px-4" })
+            </div>
+        </div>
+    </div>
+</div>
+
+<p class="small text-secondary text-center mt-4 mb-0">Please provide honest and respectful feedback.</p>
